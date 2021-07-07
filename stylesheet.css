@@ -1,0 +1,146 @@
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+header {
+  text-align: center;
+  background-color: #ffe289;
+  height: 70px;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: none;
+  padding-top: 16px;
+}
+
+.form-wrapper {
+  padding: 10px 0;
+}
+
+.orientation {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: none;
+}
+
+#first-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-size: 22px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#first-button:hover {
+  opacity: 0.8;
+}
+
+#restart-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#restart-button:hover {
+  opacity: 0.8;
+}
+
+#error {
+  display: none;
+  color: red;
+  font-weight: bolder;
+}
+
+div[class^="result-wrapper"] {
+  display: none;
+}
+
+div[class^="result-wrapper"] > .container {
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#telling {
+  color: red;
+  font-weight: bolder;
+}
+
+.content {
+  color: red;
+  font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+  .header-title h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    font-size: 24px;
+  }
+
+  img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 445px) {
+  .header-title h1 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .orientation {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .result-wrapper > .container {
+    border: none;
+  }
+}
